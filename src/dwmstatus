@@ -1,5 +1,4 @@
-#!/bin/bash
-
+#!/bin/sh
 
 # Import the modules
 for module in $HOME/.local/share/dwmstatus/*
@@ -10,8 +9,6 @@ done
 # Update dwm status bar every second
 while true
 do
-# 	xsetroot -name "$(cmus)$(SEP)$(apt)$(SEP)$(vol)$(SEP)$(ram)$(SEP)$(cpu)$(SEP)$(files)$(SEP)$(bat)$(SEP)$(ip)$(SEP)$(cal)"
-xsetroot -name "$(cmus)$(apt)$(vol)$(ram)$(cpu)$(disk)$(mounts)$(bat)$(inet)$(clock)"
-    sleep 1s
+	xsetroot -name "$(cmus)$(apt)$(vol)$(ram)$(cpu)$(disk)$(mounts)$(bat)$(inet)$(clock)"
+	sleep 1s
 done
-
