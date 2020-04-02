@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 # Import the modules
 for module in $HOME/.local/share/dwmstatus/*
